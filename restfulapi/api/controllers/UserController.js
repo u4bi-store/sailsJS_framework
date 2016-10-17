@@ -6,7 +6,8 @@
  */
 
 module.exports = {
-
-
+  goodman: function (req, res) {
+    res.send("res send u4ib");
+  }
 };
 
