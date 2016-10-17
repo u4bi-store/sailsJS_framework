@@ -7,8 +7,17 @@
 
 module.exports = {
 
-  attributes: {
-
-  }
+    attributes: {
+        email : {
+            type : 'email',
+            require : true,
+            unique : true
+        },
+        password : {
+            type : 'string',
+            required : true,
+            minLength : 6
+        }
+    }
 };
 
