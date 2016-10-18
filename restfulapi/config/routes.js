@@ -34,6 +34,20 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  'get /u4bi' : {
+    view: 'u4bi_template/u4bi',
+    locals: {
+      user:{
+        name : 'u4bi'
+      },
+      item: [
+        {name : 'item1'},
+        {name : 'item2'},
+        {name : 'item3'},
+        {name : 'item4'}
+      ]
+    }
   }
 
   /***************************************************************************

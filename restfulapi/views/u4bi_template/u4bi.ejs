@@ -1,0 +1,9 @@
+<div>
+  name : <%= user.name %>
+  <p>
+  <ul>
+    <% _.each(corndogs, function (corndog) { %>
+    <li><%= corndog.name %></li>
+    <% }) %>
+  </ul>
+</div>
