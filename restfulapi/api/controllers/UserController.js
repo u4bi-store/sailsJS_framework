@@ -26,6 +26,14 @@ module.exports = {
             data: dataArray,
             serviceData : UserService.sendData()
         });
+    },
+    jsonAPI: function(req, res){
+      /*
+        res.json(null)
+        res.json({ user: 'tobi' })
+        res.json(500, { error: 'message' })
+      */
+        return res.json({ user: 'tobi'});
     }
 };
 
