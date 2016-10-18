@@ -42,10 +42,10 @@ module.exports.routes = {
         name : 'u4bi'
       },
       item: [
-        {name : 'item1'},
-        {name : 'item2'},
-        {name : 'item3'},
-        {name : 'item4'}
+        {name : 'value1'},
+        {name : 'value2'},
+        {name : 'value3'},
+        {name : 'value4'}
       ]
     }
   }
