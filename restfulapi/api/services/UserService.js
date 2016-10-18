@@ -1,5 +1,5 @@
 var UserService = {
-    sayHello : function sayHelloService(){
+    sayMsg : function sayHelloService(){
         return 'u4bi test service';
     }
 }

@@ -6,6 +6,10 @@
  */
 
 module.exports = {
+    index: function(req, res){
+        var u4biServiceMsg = UserService.sayMsg();
+        res.send('service : '+u4biServiceMsg);
+    },
     goodman: function (req, res) {
         res.send("res send u4ib");
     },
