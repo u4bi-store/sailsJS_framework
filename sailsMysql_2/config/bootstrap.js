@@ -1,17 +1,7 @@
-/**
- * Bootstrap
- * (sails.config.bootstrap)
- *
- * An asynchronous bootstrap function that runs before your Sails app gets lifted.
- * This gives you an opportunity to set up your data model, run jobs, or perform some special logic.
- *
- * For more information on bootstrapping your app, check out:
- * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.bootstrap.html
- */
-
 module.exports.bootstrap = function(cb) {
-
-  // It's very important to trigger this callback method when you are finished
-  // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
-  cb();
+  U4bi.create({name: '명재'}).exec(console.log);
+  U4bi.create({name: '명돌'}).exec(console.log);
+  U4bi.create({name: '명삼'}).exec(console.log);
+  U4bi.create({name: '명훈'}).exec(console.log);
+  U4bi.create({name: '명한'}).exec(console.log);
 };
