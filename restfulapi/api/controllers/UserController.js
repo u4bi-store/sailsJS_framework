@@ -5,6 +5,8 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
+var dataArray = ['A','B','C'];
+
 module.exports = {
     index: function(req, res){
         var u4biServiceMsg = UserService.sayMsg();
@@ -18,6 +20,12 @@ module.exports = {
     },
     bye: function(req,res){
         return res.redirect('https://github.com/u4bi');
+    },
+    rootcode10: function(req, res){
+        return res.view('u4bi_template/rootcode10',{
+            data: dataArray,
+            serviceData : UserService.sendData()
+        });
     }
 };
 
