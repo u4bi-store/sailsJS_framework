@@ -45,6 +45,16 @@ module.exports = {
             id:2
           }]
         });
+    },
+    update: function(req,res){
+      return res.view('user/update');
+    },
+    ok: function(req, res){
+      /* return res.ok(data, pathToView); */
+        return res.ok({
+          name: 'u4bi',
+          occupation: 'developer'
+        }, 'user/detail');
     }
 };
 
