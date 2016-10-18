@@ -34,6 +34,17 @@ module.exports = {
         res.json(500, { error: 'message' })
       */
         return res.json({ user: 'tobi'});
+    },
+    jsonpAPI: function(req, res){
+        return res.jsonp({
+          users: [{
+            name: 'thelma',
+            id : 1
+          },{
+            name : 'leonardo',
+            id:2
+          }]
+        });
     }
 };
 
