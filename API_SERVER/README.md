@@ -6,4 +6,4 @@ a [Sails](http://sailsjs.org) application
   <p>
         npm install sails-mysql --save
         pakage.json 에 등록됨.
-  </p>
+  <p>
