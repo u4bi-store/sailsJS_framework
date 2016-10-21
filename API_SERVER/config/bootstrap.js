@@ -11,7 +11,8 @@
 
 module.exports.bootstrap = function(cb) {
 
-  // It's very important to trigger this callback method when you are finished
-  // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
+  User.create({name: '명재', age : 17, phone : '010-7777-1234', money : 1000}).exec(console.log);
+  User.create({name: '명돌', age : 18, phone : '010-7777-2234', money : 3000}).exec(console.log);
+  User.create({name: '명훈', age : 19, phone : '010-7777-3234', money : 4000}).exec(console.log);
   cb();
 };
